@@ -8,7 +8,7 @@ class Block {
     }
 }
 
-class Swaper {
+class Swapper {
     firstCell;
     secondCell;
     countClick = 0;
@@ -91,7 +91,7 @@ var numberOfRows = 5;
 var numberOfColumns = 5;
 var cells = [];
 var colors = ["red", "yellow", "green"];
-var swaper = new Swaper();
+var swapper = new Swapper();
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -119,7 +119,7 @@ function checkWin() {
 }
 
 function moveSelect(cell) {
-    swaper.click(cell);
+    swapper.click(cell);
 }
 
 // Generating Header
@@ -172,7 +172,8 @@ function clearField() {
 }
 
 function restart() {
-    swaper = new Swaper();
+    swapper = new 
+    ();
     clearField();
     generateField();
 }
