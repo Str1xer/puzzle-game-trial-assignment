@@ -172,8 +172,7 @@ function clearField() {
 }
 
 function restart() {
-    swapper = new 
-    ();
+    swapper = new Swapper();
     clearField();
     generateField();
 }
