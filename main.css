@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: #141E30;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(45deg, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(45deg, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#viewport {
+	top: 10vh;
+	position: relative;
+	margin: auto;
+	width: 40vh;
+	height: 48vh;
+}
+
+.cell {
+	float: left;
+	width: 8vh;
+	height: 8vh;
+	text-align: center;
+	vertical-align: middle;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	font-size: 3vh;
+	line-height: 7vh;
+	border: 1px solid rgba(255, 255, 255, .1);
+	color: #fff;
+	text-shadow: -1px 1px 0px #c29dfa, -3px 3px 0px #934ffa, -4px 4px 0px #6600ff;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	height: 8vh;
+	padding-bottom: 10px;
+}
+
+.header .cell {
+	width: 6vh;
+	height: 6vh;
+	margin: 1vh;
+	border: none;
+}
+
+#field {
+	position: absolute;
+	width: 40vh;
+	height: 40vh;
+	top: 8vh;
+}
+
+#field .cell {
+	background-color: rgba(0,0,0,.1);
+}
+
+.win {
+	background: rgba(0, 0, 0, .2);
+}
+
+.blocked {
+	background-color: #003566 !important;
+	background-size: 75%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("./Burger.svg");
+}
+
+.red {
+	background: #d62828 !important;
+	box-shadow: inset 0 0 0 5px rgba(0,0,0,.1);
+}
+
+.yellow {
+	background: #ffc300 !important;
+	box-shadow: inset 0 0 0 5px rgba(0,0,0,.1);
+}
+
+.green {
+	background: #2ec4b6 !important;
+	box-shadow: inset 0 0 0 5px rgba(0,0,0,.1);
+}
+
+.selected {
+	border: 3px solid powderblue;
+}
+
+.restar_button {
+	position: absolute;
+	top: 3vh;
+	left: 3vh;
+	width: 5vh;
+	height: 5vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("./Restart.svg");
+}
+
+.button {
+	background: #141E30;
+	color: #eee;
+	padding: 1vh;
+	border-radius: 0.5vh;
+	margin: 5px 20px;
+}
+
+.button:hover {
+	background: rgba(0, 0, 0, .9);
+}
